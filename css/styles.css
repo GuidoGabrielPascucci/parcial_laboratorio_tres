@@ -1,0 +1,247 @@
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-image: url('../resources/navbarBackground.jpg');
+    background-size: cover;
+}
+
+header > #container-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#img-logoSitio {
+    width: 400px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+nav {
+    height: 150px;
+}
+
+#navbar-enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    list-style: none;
+}
+
+#navbar-enlaces > li > a {
+    text-decoration: none;
+    padding: 30px;
+    margin: 10px;
+    color: rgb(244, 238, 238);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#container-encabezadoTitulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    color: white
+}
+
+/* TITULO */
+
+h1 {
+    margin: 0;
+    padding: 40px 0;
+    background-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+/* FORMULARIO */
+
+#seccion-formularioSuperheroes {
+    padding: 5px 20px;
+    background-image: url('../resources/bodyBackground.jpg');
+    background-size: cover;
+}
+
+#seccion-formularioSuperheroes > h3 {
+    color: rgb(27, 25, 73);
+    font-size: 20px;
+}
+
+#seccion-formularioSuperheroes > form {
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form > fieldset > legend {
+    font-weight: bold;
+    color: grey;
+}
+
+form > h4 {
+    margin: 0;
+}
+
+form > label, form > h4, #container-radiobuttons, select {
+    font-size: 13.6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    border: 0;
+    border-radius: 12.5px;
+    background-color: rgb(210, 210, 210);
+    font-size: 13.6px;
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+#seccion-formularioSuperheroes > form > #container-radiobuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container-radiobuttons > h4 {
+    margin: 5px 0;
+}
+
+#container-radiobuttons > div {
+    display: inherit;
+    flex-direction: row;
+    margin-left: 12px;
+}
+
+#container-radiobuttons > div > label {
+    width: 40px;
+}
+
+input[type='radio'] {
+    width: 10%;
+    margin: auto 40px;
+}
+
+#container-rbAlquiler {
+    margin-bottom: 10px;
+}
+
+#btnGuardar {
+    width: 15%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: rgb(30, 21, 164);
+    color: rgb(233, 231, 231);
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* TABLA */
+
+#seccion-tablaSuperheroes {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#seccion-tablaSuperheroes > h3 {
+    font-size: 33px
+}
+
+
+table {
+    margin: 0 auto;
+}
+
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    font-size: 24px;
+}
+
+td {
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#footer-enlaces {
+    list-style: none;
+    margin-left: 50px;
+}
+
+#footer-enlaces > li {
+    margin: 12px;
+}
+#footer-enlaces > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer > p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 500px) {
+    #navbar-enlaces {
+        flex-direction: column;
+    }
+
+    #container-navbar {
+        justify-content: space-between;
+    }
+}

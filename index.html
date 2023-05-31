@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" type="module" defer></script>
+    <title>Primer Parcial Laboratorio 3</title>
+</head>
+<body>
+    <header>
+        <div id="container-navbar">
+            <img id="img-logoSitio" src="./resources/logo.png" alt="Logo del sitio web">
+            <nav>
+                <ul id="navbar-enlaces">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Personajes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Crud Heroes</h1>
+    </header>
+
+    <section id="seccion-formularioSuperheroes">
+        <form action="#">
+            <h3>Información del SuperHeroe</h3>
+            <!-- Txt -->
+            <label for="txt-nombre">Nombre</label>
+            <input type="text" name="nombre" id="txt-nombre" placeholder="Ingrese nombre">
+
+            <label for="txt-alias">Alias</label>
+            <input type="text" name="alias" id="txt-alias" placeholder="Ingrese alter-ego">
+
+            <!-- Radiobuttons -->
+            <h4>Editorial</h4>
+            <div id="container-radiobuttons">
+                <div id="container-rbMarvel">
+                    <label for="rb-marvel">Marvel</label>
+                    <input type="radio" name="editorial" value="marvel" id="rb-marvel">
+                </div>
+                <div id="container-rbDc">
+                    <label for="rb-dc">DC</label>
+                    <input type="radio" name="editorial" value="dc" id="rb-dc">
+                </div>                    
+            </div>
+
+            <!-- Range -->
+            <label for="range-fuerza">Fuerza</label>
+            <input type="range" name="fuerza" id="range-fuerza">
+
+            <!-- Select -->
+            <label for="select-arma">Arma</label>
+            <select name="arma" id="select-arma"></select>
+
+            <!-- BTN Submit -->
+            <button type="button" id="btnGuardar">Guardar</button>
+        </form>
+    </section>
+
+    <section id="seccion-tablaSuperheroes">
+		<h3>Tabla Superheroes</h3>
+        <figure id="fig-superheroes">
+            <table id="tabla-superheroes"></table>    
+            <figcaption>Una tabla de los Superheroes</figcaption>
+        </figure>
+    </section>
+
+    <footer>
+        <ul id="footer-enlaces">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Personajes</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>Laboratorio III - todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
